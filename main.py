@@ -59,8 +59,8 @@ def print_dimacs(n, edges, comment=None):
 if args.type == 'erdos':
     edges=erdos(args.n, args.p)
     print(f"c Randomly Generated Erdos-Reyni Graph with p={args.p} and n={args.n}")
-    print_graph(args.n, edges)
+    print_dimacs(args.n, edges)
 if args.type == 'fixed':
     print(f"c Randomly Generated graph with fixed number of edges and vertices")
     edges=fixed(args.n, args.m)
-    print_graph(args.n, edges)
+    print_dimacs(args.n, edges)
