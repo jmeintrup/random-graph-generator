@@ -1,5 +1,7 @@
 # Random Graph Generator
-Simple random graph generator written in python, generates graph in DIMACS .col format
+Simple random graph generator written in python, generates graph in DIMACS .col format.
+All graphs are simple and connected. For this, a random spanning tree is constructed and missing edges are added at random.
+This means that all graphs with n vertices contain at least n-1 edges.
 
 ### Usage
 ```
